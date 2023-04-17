@@ -14,7 +14,6 @@ void main()
 
 	cout << "--- I способ ---" << endl;
 	stringstream ss(str);
-
 	while (ss >> word)
 		cout << word << endl;
 
