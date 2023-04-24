@@ -26,13 +26,17 @@ void main()
 	{
 		// Если такого символа ещё нет в словаре
 		if (dict.find(c) == dict.end())
+			// Добавление ключа со значением
 			dict[c] = 1;
 		else
+			// Изменение значения по определённому ключу
 			dict[c]++;
 	}
 
 	for (pair<char, int> item : dict)
 	{
+		// first - ключ
+		// second - значение
 		cout << item.first << " : " << item.second << endl;
 	}
 }
