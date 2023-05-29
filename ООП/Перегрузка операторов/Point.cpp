@@ -25,6 +25,11 @@ double Point::GetDistance(int x, int y)
 	return this->GetDistance(new Point(x, y));
 }
 
+Point Point::operator+(const Point& p)
+{
+	return Point(this->x + p.x, this->y + p.y);
+}
+
 std::ostream& operator<<(std::ostream& out, const Point* point)
 {
 	out << "(" << point->x << ", " << point->y << ")";

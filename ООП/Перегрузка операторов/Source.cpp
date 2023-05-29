@@ -9,4 +9,5 @@ void main()
 	Point p2(78, 33);
 	cout << p1;
 	cout << p2;
+	cout << (*p1 + p2);
 }

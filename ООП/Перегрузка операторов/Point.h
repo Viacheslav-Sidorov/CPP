@@ -14,5 +14,7 @@ public:
 	//          Данные функции не являются членами класса.
 	friend std::ostream& operator<< (std::ostream& out, const Point* point);
 	friend std::ostream& operator<< (std::ostream& out, const Point& point);
+
+	Point operator+ (const Point& p);
 };
 
